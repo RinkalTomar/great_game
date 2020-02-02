@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Invitation Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body style="font-family: Arial; font-size: 12px;">
+<div>
+    <p>Hello,<br/><br/>Welcome to GreatGames !
+        <br/>You have been invited to join GreatGames CMS portal, Please follow the link to complete the regsitration
+        Process. - <a th:href="@{${link}}">Click here</a>.
+        </br>
+
+        If the link does not work, open the following link in your browser.
+        <br>
+        <p th:text="${link}"/>
+        <br/><br/>Thanks
+    </p>
+</div>
+</body>
+</html>
